@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Directory | Benin City Chamber of Commerce</title>
+  <meta name="description"
+    content="Browse the member business directory of the Benin City Chamber of Commerce in Edo State, Nigeria. Find local companies, contact details, and websites.">
+  <meta name="author" content="Osasere Ikponmwosa">
+
+  <meta property="o
+  g:title" content="Business Directory | Benin City Chamber of Commerce">
+  <meta property="og:description"
+    content="Find and connect with member businesses of the Benin City Chamber of Commerce in Edo State, Nigeria.">
+  <meta property="og:image" content="https://osasereik.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://osasereik.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Benin City Chamber of Commerce logo" width="48" height="48">
+      <span>Benin City Chamber of Commerce</span>
+    </a>
+    <button id="menu" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+      aria-controls="nav-links"></button>
+    <nav aria-label="Main navigation">
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="directory.html" aria-current="page">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Business Directory</h1>
+
+    <div class="view-toggle" role="group" aria-label="Choose directory view">
+      <button type="button" id="grid-btn" class="active" aria-pressed="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3zM13 13h8v8h-8z"/></svg>
+        Grid
+      </button>
+      <button type="button" id="list-btn" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v3H3zM3 10.5h18v3H3zM3 17h18v3H3z"/></svg>
+        List
+      </button>
+    </div>
+
+    <div id="members" class="members grid" aria-live="polite"></div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <address class="contact">
+        <strong>Benin City Chamber of Commerce</strong><br>
+        12 Sapele Road<br>
+        Benin City, Edo State, Nigeria<br>
+        <a href="mailto:info@benincitychamber.org">info@benincitychamber.org</a><br>
+        <a href="tel:+2348035550100">+234 803 555 0100</a>
+      </address>
+
+      <div class="social">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07Z"/></svg>
+        </a>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.4l-5.8-7.58-6.63 7.58H.48l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Zm-1.29 19.5h2.04L6.48 3.24H4.3l13.31 17.41Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/seregheik/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+      </div>
+
+      <div class="dev-info">
+        <p>WDD231 Class Project</p>
+        <p>Osasere Ikponmwosa</p>
+        <p>&copy; <span id="currentyear"></span> Benin City Chamber of Commerce</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

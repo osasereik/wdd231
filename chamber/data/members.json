@@ -1,0 +1,103 @@
+{
+  "members": [
+    {
+      "name": "Igun Bronze Works",
+      "tagline": "Traditional Benin bronze casting since 1975",
+      "address": "8 Igun Street, Benin City, Edo State",
+      "phone": "+234 803 555 0101",
+      "website": "https://www.igunbronzeworks.com.ng/",
+      "image": "igun-bronze.svg",
+      "membershipLevel": 3,
+      "category": "Arts & Crafts",
+      "founded": 1975
+    },
+    {
+      "name": "Edo Innovation Labs",
+      "tagline": "Software, training, and startup support",
+      "address": "45 Ugbowo-Lagos Road, Benin City, Edo State",
+      "phone": "+234 803 555 0102",
+      "website": "https://www.edoinnovationlabs.com.ng/",
+      "image": "edo-innovation.svg",
+      "membershipLevel": 3,
+      "category": "Technology",
+      "founded": 2016
+    },
+    {
+      "name": "Ring Road Pharmacy",
+      "tagline": "Trusted community health care",
+      "address": "3 King's Square, Ring Road, Benin City, Edo State",
+      "phone": "+234 803 555 0103",
+      "website": "https://www.ringroadpharmacy.com.ng/",
+      "image": "ring-road-pharmacy.svg",
+      "membershipLevel": 2,
+      "category": "Health",
+      "founded": 2004
+    },
+    {
+      "name": "Moat City Logistics",
+      "tagline": "Fast, reliable delivery across Edo State",
+      "address": "112 Sapele Road, Benin City, Edo State",
+      "phone": "+234 803 555 0104",
+      "website": "https://www.moatcitylogistics.com.ng/",
+      "image": "moat-logistics.svg",
+      "membershipLevel": 1,
+      "category": "Transport & Logistics",
+      "founded": 2012
+    },
+    {
+      "name": "Mama Osa's Kitchen",
+      "tagline": "Authentic Edo dishes, made fresh daily",
+      "address": "27 Airport Road, Benin City, Edo State",
+      "phone": "+234 803 555 0105",
+      "website": "https://www.mamaosaskitchen.com.ng/",
+      "image": "mama-osa.svg",
+      "membershipLevel": 1,
+      "category": "Food & Dining",
+      "founded": 2010
+    },
+    {
+      "name": "Uselu Print House",
+      "tagline": "Printing, branding, and signage",
+      "address": "60 Uselu-Lagos Road, Benin City, Edo State",
+      "phone": "+234 803 555 0106",
+      "website": "https://www.uselprinthouse.com.ng/",
+      "image": "uselu-print.svg",
+      "membershipLevel": 2,
+      "category": "Business Services",
+      "founded": 2008
+    },
+    {
+      "name": "SunPower Edo",
+      "tagline": "Solar energy solutions for homes and businesses",
+      "address": "19 Akpakpava Road, Benin City, Edo State",
+      "phone": "+234 803 555 0107",
+      "website": "https://www.sunpoweredo.com.ng/",
+      "image": "sunpower-edo.svg",
+      "membershipLevel": 3,
+      "category": "Energy",
+      "founded": 2018
+    },
+    {
+      "name": "Oba Market Fabrics",
+      "tagline": "Coral beads, lace, and traditional attire",
+      "address": "Stall 14, Oba Market, Benin City, Edo State",
+      "phone": "+234 803 555 0108",
+      "website": "https://www.obamarketfabrics.com.ng/",
+      "image": "oba-fabrics.svg",
+      "membershipLevel": 1,
+      "category": "Retail & Fashion",
+      "founded": 1998
+    },
+    {
+      "name": "GRA Realty Partners",
+      "tagline": "Homes, offices, and property management",
+      "address": "5 Okoro-Otun Avenue, GRA, Benin City, Edo State",
+      "phone": "+234 803 555 0109",
+      "website": "https://www.grarealtypartners.com.ng/",
+      "image": "gra-realty.svg",
+      "membershipLevel": 2,
+      "category": "Real Estate",
+      "founded": 2014
+    }
+  ]
+}

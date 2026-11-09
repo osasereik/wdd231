@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" fill="#8a4b1c"/>
+  <circle cx="60" cy="60" r="44" fill="none" stroke="#f3d38a" stroke-width="4" opacity="0.6"/>
+  <text x="60" y="60" dy="0.35em" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#f3d38a">IB</text>
+</svg>
