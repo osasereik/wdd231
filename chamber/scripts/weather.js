@@ -1,4 +1,6 @@
-const API_KEY = "ed3886c7a4a73beb29c48b0649978e2d";
+// OpenWeatherMap: current conditions + 3-day forecast for Benin City, Nigeria.
+// Get a free key at https://home.openweathermap.org/api_keys
+const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
 const LAT = 6.335;
 const LON = 5.6037;
 const BASE = "https://api.openweathermap.org/data/2.5";
@@ -22,6 +24,7 @@ async function getJson(url) {
 
 const capitalize = (text) => text.replace(/\b\w/g, (c) => c.toUpperCase());
 
+// Convert a UTC timestamp to the city's local date using its timezone offset
 function localDate(unixSeconds, offsetSeconds) {
   return new Date((unixSeconds + offsetSeconds) * 1000);
 }
@@ -47,6 +50,7 @@ function displayForecast(data) {
   const offset = data.city.timezone;
   const today = localDate(Date.now() / 1000, offset).toISOString().slice(0, 10);
 
+  // Group the 3-hour readings by local calendar day, tracking each day's high
   const days = new Map();
   data.list.forEach((reading) => {
     const date = localDate(reading.dt, offset);
