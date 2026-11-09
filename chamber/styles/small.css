@@ -152,6 +152,12 @@ h1 {
   background-color: var(--primary);
 }
 
+/* Reserve space while members load from JSON so the footer
+   doesn't jump (prevents Cumulative Layout Shift) */
+#members:empty {
+  min-height: 100vh;
+}
+
 .members.grid {
   display: grid;
   grid-template-columns: 1fr;
