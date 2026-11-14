@@ -22,6 +22,37 @@
   .list .level {
     display: none;
   }
+
+  .hero img {
+    aspect-ratio: 2 / 1;
+  }
+
+  .hero-content {
+    left: 1.5rem;
+    right: auto;
+    bottom: 3rem;
+    max-width: 60%;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .cta {
+    padding: 0.65rem 1.4rem;
+    font-size: 1.05rem;
+  }
+
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .events,
+  #spotlights .member:nth-child(3) {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (min-width: 900px) {
@@ -76,6 +107,19 @@
 
   .members.grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+
+  .events,
+  #spotlights .member:nth-child(3) {
+    grid-column: auto;
   }
 
   .footer-inner {
