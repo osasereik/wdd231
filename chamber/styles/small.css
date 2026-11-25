@@ -8,13 +8,10 @@
   --text: #2a1d14;
   --muted: #5c4b3e;
   --border: #e3d6c4;
-  --radius: 4px;
-  --shadow: 0 2px 6px rgb(42 29 20 / 12%);
-  --font: "Nunito Sans", Arial, Helvetica, sans-serif;
 }
 
 body {
-  font-family: var(--font);
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
   color: var(--text);
   background-color: var(--bg);
   line-height: 1.6;
@@ -33,7 +30,6 @@ header {
 
 .brand {
   flex: 1;
-  min-width: 0;
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -44,22 +40,10 @@ header {
   font-size: 1.05rem;
 }
 
-.brand img {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-}
-
 #menu {
   width: 44px;
   height: 44px;
   font-size: 1.6rem;
-  line-height: 1;
-  color: var(--primary);
-  background: transparent;
-  border: 2px solid var(--primary);
-  border-radius: var(--radius);
-  cursor: pointer;
 }
 
 #menu::before {
@@ -89,7 +73,7 @@ nav a {
   text-decoration: none;
   color: var(--text);
   font-weight: 600;
-  border-left: 4px solid transparent;
+  border-left: 4px solid var(--surface);
 }
 
 nav a:hover,
@@ -110,10 +94,24 @@ main {
   padding: 1rem;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   color: var(--primary);
+  line-height: 1.3;
+}
+
+h1 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+}
+
+button {
+  font-weight: 700;
+  color: var(--primary);
+  background-color: var(--surface);
+  border: 2px solid var(--primary);
+  cursor: pointer;
 }
 
 .view-toggle {
@@ -124,22 +122,7 @@ h1 {
 }
 
 .view-toggle button {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
   padding: 0.5rem 1rem;
-  font-weight: 700;
-  color: var(--primary);
-  background-color: var(--surface);
-  border: 2px solid var(--primary);
-  border-radius: var(--radius);
-  cursor: pointer;
-}
-
-.view-toggle svg {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
 }
 
 .view-toggle button:hover,
@@ -164,16 +147,13 @@ h1 {
 
 .members.grid {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
-.member {
+.member,
+.card {
   background-color: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
 }
 
 .grid .member-head {
@@ -182,10 +162,9 @@ h1 {
   border-bottom: 1px solid var(--border);
 }
 
-.member h2 {
+.member h2,
+.member h3 {
   font-size: 1.15rem;
-  line-height: 1.3;
-  color: var(--primary);
 }
 
 .tagline {
@@ -197,14 +176,10 @@ h1 {
   display: grid;
   grid-template-columns: 90px 1fr;
   gap: 0.75rem;
-  align-items: start;
   padding: 1rem;
 }
 
 .member img {
-  width: 90px;
-  height: 90px;
-  border-radius: var(--radius);
   border: 1px solid var(--border);
 }
 
@@ -228,41 +203,29 @@ h1 {
   font-size: 0.75rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  border-radius: var(--radius);
-  border: 1px solid transparent;
 }
 
 .level-3 {
   background-color: #f5d77a;
   color: #4a3200;
-  border-color: #c8962b;
 }
 
 .level-2 {
   background-color: #e3e5e8;
   color: #33383f;
-  border-color: #a9afb7;
 }
 
 .level-1 {
   background-color: var(--secondary-light);
   color: var(--primary-dark);
-  border-color: var(--border);
 }
 
 .members.list {
-  display: flex;
-  flex-direction: column;
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
 }
 
 .list .member {
   border: none;
-  border-radius: 0;
-  box-shadow: none;
   padding: 0.75rem 1rem;
 }
 
@@ -290,7 +253,6 @@ h1 {
   height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: var(--radius);
 }
 
 .hero-content {
@@ -299,15 +261,13 @@ h1 {
   right: 0.75rem;
   bottom: 2.25rem;
   padding: 0.6rem 0.85rem;
-  background-color: rgb(42 29 20 / 78%);
+  background-color: #2a1d14c7;
   border-left: 4px solid var(--secondary);
-  border-radius: var(--radius);
 }
 
 .hero h1 {
   color: #ffffff;
   font-size: 1.15rem;
-  line-height: 1.25;
   margin-bottom: 0.5rem;
 }
 
@@ -319,13 +279,10 @@ h1 {
   color: var(--primary-dark);
   background-color: var(--secondary);
   border: 2px solid var(--secondary);
-  border-radius: var(--radius);
-  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .cta:hover,
 .cta:focus-visible {
-  color: var(--primary-dark);
   background-color: #ffffff;
 }
 
@@ -340,14 +297,6 @@ h1 {
   display: grid;
   gap: 1rem;
   margin-bottom: 1.5rem;
-}
-
-.card {
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
 }
 
 .card h2 {
@@ -379,16 +328,12 @@ h1 {
   padding: 0.3rem 0;
   font-weight: 800;
   text-align: center;
-  line-height: 1.2;
   color: var(--primary-dark);
   background-color: var(--secondary-light);
-  border-radius: var(--radius);
 }
 
 .event-list h3 {
   font-size: 1rem;
-  line-height: 1.3;
-  color: var(--primary);
 }
 
 .event-list p {
@@ -413,7 +358,6 @@ h1 {
 .temp {
   font-size: 2.25rem;
   font-weight: 800;
-  line-height: 1.1;
   color: var(--primary);
 }
 
@@ -436,7 +380,6 @@ h1 {
 }
 
 .weather-details dd {
-  margin: 0;
   font-weight: 700;
 }
 
@@ -465,13 +408,6 @@ h1 {
 .spotlight-section > h2 {
   margin-bottom: 0.75rem;
   font-size: 1.5rem;
-  color: var(--primary);
-}
-
-.member h3 {
-  font-size: 1.15rem;
-  line-height: 1.3;
-  color: var(--primary);
 }
 
 footer {
@@ -490,26 +426,10 @@ footer {
   text-align: center;
 }
 
-footer a {
-  color: #ffffff;
-}
-
 .social {
   display: flex;
   justify-content: center;
   gap: 1rem;
-}
-
-.social a {
-  display: block;
-  width: 36px;
-  height: 36px;
-}
-
-
-.social a:hover,
-.social a:focus-visible {
-  color: var(--secondary);
 }
 
 .join-layout {
@@ -569,10 +489,6 @@ footer a {
 dialog button {
   margin-top: 0.5rem;
   padding: 0.4rem 1rem;
-  color: var(--primary);
-  background-color: var(--surface);
-  border: 2px solid var(--primary);
-  cursor: pointer;
 }
 
 dialog {
@@ -582,7 +498,7 @@ dialog {
 }
 
 dialog::backdrop {
-  background-color: rgb(0 0 0 / 50%);
+  background-color: #00000080;
 }
 
 .results {

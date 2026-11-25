@@ -82,18 +82,18 @@
   nav a {
     padding: 0.5rem 0.9rem;
     border-left: none;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid var(--surface);
   }
 
   nav a:hover,
   nav a:focus-visible {
-    background-color: transparent;
+    background-color: var(--surface);
     border-bottom-color: var(--secondary);
   }
 
   nav .current a {
     color: var(--primary);
-    background-color: transparent;
+    background-color: var(--surface);
     border-bottom-color: var(--primary);
   }
 
