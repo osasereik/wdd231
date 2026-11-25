@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Benin City Chamber of Commerce</title>
+  <meta name="description" content="Thank you for applying to join the Benin City Chamber of Commerce.">
+  <meta name="author" content="Osasere Ikponmwosa">
+  <meta property="og:title" content="Thank You | Benin City Chamber of Commerce">
+  <meta property="og:description" content="Your membership application has been received.">
+  <meta property="og:image" content="https://osasereik.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://osasereik.github.io/wdd231/chamber/thankyou.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Benin City Chamber of Commerce logo" width="48" height="48">
+      <span>Benin City Chamber of Commerce</span>
+    </a>
+    <button id="menu" type="button" aria-label="Toggle navigation menu"></button>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank You!</h1>
+    <p>Your membership application has been received. Here is what you submitted:</p>
+    <div class="results">
+      <p>First Name: <span id="first"></span></p>
+      <p>Last Name: <span id="last"></span></p>
+      <p>Email: <span id="email"></span></p>
+      <p>Mobile Phone: <span id="phone"></span></p>
+      <p>Business Name: <span id="business"></span></p>
+      <p>Submitted: <span id="timestamp"></span></p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <address>
+        <strong>Benin City Chamber of Commerce</strong><br>
+        12 Sapele Road<br>
+        Benin City, Edo State, Nigeria<br>
+        info@benincitychamber.org<br>
+        +234 803 555 0100
+      </address>
+      <div class="social">
+        <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook" width="36" height="36"></a>
+        <a href="https://x.com/"><img src="images/x.svg" alt="X" width="36" height="36"></a>
+        <a href="https://www.linkedin.com/in/seregheik/"><img src="images/linkedin.svg" alt="LinkedIn" width="36" height="36"></a>
+      </div>
+      <div class="dev-info">
+        <p>WDD231 Class Project</p>
+        <p>Osasere Ikponmwosa</p>
+        <p>&copy; <span id="currentyear"></span> Benin City Chamber of Commerce</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

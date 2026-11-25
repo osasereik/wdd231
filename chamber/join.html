@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join | Benin City Chamber of Commerce</title>
+  <meta name="description" content="Join the Benin City Chamber of Commerce. Compare membership levels and apply online.">
+  <meta name="author" content="Osasere Ikponmwosa">
+  <meta property="og:title" content="Join the Benin City Chamber of Commerce">
+  <meta property="og:description" content="Compare membership levels and apply to join the chamber.">
+  <meta property="og:image" content="https://osasereik.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://osasereik.github.io/wdd231/chamber/join.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="Benin City Chamber of Commerce logo" width="48" height="48">
+      <span>Benin City Chamber of Commerce</span>
+    </a>
+    <button id="menu" type="button" aria-label="Toggle navigation menu"></button>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="current"><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Chamber</h1>
+
+    <div class="join-layout">
+      <section>
+        <h2>Membership Application</h2>
+        <form class="join-form" action="thankyou.html" method="get">
+          <label>First Name
+            <input type="text" name="first" title="First name" autocomplete="given-name" required>
+          </label>
+          <label>Last Name
+            <input type="text" name="last" title="Last name" autocomplete="family-name" required>
+          </label>
+          <label>Organizational Title
+            <input type="text" name="title" title="At least 7 letters, spaces, or hyphens" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}">
+          </label>
+          <label>Email
+            <input type="email" name="email" title="Email address" autocomplete="email" placeholder="name@example.com" required>
+          </label>
+          <label>Mobile Phone
+            <input type="tel" name="phone" title="Mobile phone number" autocomplete="tel" required>
+          </label>
+          <label>Business Name
+            <input type="text" name="business" title="Business or organization name" autocomplete="organization" required>
+          </label>
+          <label>Membership Level
+            <select name="level" title="Membership level">
+              <option value="np">NP Membership (Non-Profit)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+          <label>Business Description
+            <textarea name="description" title="Business description" rows="4"></textarea>
+          </label>
+          <input type="hidden" name="timestamp" id="timestamp">
+          <input type="submit" value="Submit Application">
+        </form>
+      </section>
+
+      <section>
+        <h2>Membership Levels</h2>
+        <div class="level-card">
+          <h3>Non-Profit Membership</h3>
+          <button type="button" data-modal="np">Learn More</button>
+        </div>
+        <div class="level-card">
+          <h3>Bronze Membership</h3>
+          <button type="button" data-modal="bronze">Learn More</button>
+        </div>
+        <div class="level-card">
+          <h3>Silver Membership</h3>
+          <button type="button" data-modal="silver">Learn More</button>
+        </div>
+        <div class="level-card">
+          <h3>Gold Membership</h3>
+          <button type="button" data-modal="gold">Learn More</button>
+        </div>
+      </section>
+    </div>
+
+    <dialog id="np">
+      <h3>Non-Profit Membership</h3>
+      <ul>
+        <li>Directory listing</li>
+        <li>Monthly newsletter</li>
+      </ul>
+      <p>Cost: Free</p>
+      <button type="button" class="close">Close</button>
+    </dialog>
+
+    <dialog id="bronze">
+      <h3>Bronze Membership</h3>
+      <ul>
+        <li>Directory listing</li>
+        <li>Monthly newsletter</li>
+        <li>One free training workshop</li>
+      </ul>
+      <p>Cost: &#8358;50,000 per year</p>
+      <button type="button" class="close">Close</button>
+    </dialog>
+
+    <dialog id="silver">
+      <h3>Silver Membership</h3>
+      <ul>
+        <li>Everything in Bronze</li>
+        <li>Home page spotlight</li>
+        <li>Discounts on chamber events</li>
+      </ul>
+      <p>Cost: &#8358;120,000 per year</p>
+      <button type="button" class="close">Close</button>
+    </dialog>
+
+    <dialog id="gold">
+      <h3>Gold Membership</h3>
+      <ul>
+        <li>Everything in Silver</li>
+        <li>Website advertising</li>
+        <li>Invitations to special events</li>
+        <li>Free booth at the trade fair</li>
+      </ul>
+      <p>Cost: &#8358;250,000 per year</p>
+      <button type="button" class="close">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <address>
+        <strong>Benin City Chamber of Commerce</strong><br>
+        12 Sapele Road<br>
+        Benin City, Edo State, Nigeria<br>
+        info@benincitychamber.org<br>
+        +234 803 555 0100
+      </address>
+      <div class="social">
+        <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook" width="36" height="36"></a>
+        <a href="https://x.com/"><img src="images/x.svg" alt="X" width="36" height="36"></a>
+        <a href="https://www.linkedin.com/in/seregheik/"><img src="images/linkedin.svg" alt="LinkedIn" width="36" height="36"></a>
+      </div>
+      <div class="dev-info">
+        <p>WDD231 Class Project</p>
+        <p>Osasere Ikponmwosa</p>
+        <p>&copy; <span id="currentyear"></span> Benin City Chamber of Commerce</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

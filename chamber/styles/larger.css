@@ -117,6 +117,10 @@
     grid-template-columns: 1.4fr 1fr 1fr;
   }
 
+  .join-layout {
+    grid-template-columns: 3fr 2fr;
+  }
+
   .events,
   #spotlights .member:nth-child(3) {
     grid-column: auto;

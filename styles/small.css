@@ -293,8 +293,3 @@ footer p {
   color: var(--accent);
 }
 
-.social svg {
-  width: 36px;
-  height: 36px;
-  fill: currentColor;
-}
